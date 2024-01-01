@@ -1,7 +1,7 @@
 # mdsplit: Markdown Splitter for mdBook
 
 ## Overview
-`mdsplit` is a preprocessor script for mdBook, designed to parse a single long Markdown file and split it into parts, sections, and subsections. It recognizes and organizes content based on header levels: `#` for parts, `##` for sections, `###` for subsections, and retains the original levels for headers level 4 and beyond.
+`mdsplit` is a preprocessor script for [mdBook](https://github.com/rust-lang/mdBook), designed to parse a single long Markdown file and split it into parts, sections, and subsections. It recognizes and organizes content based on header levels: `#` for parts, `##` for sections, `###` for subsections, and retains the original levels for headers level 4 and beyond.
 
 - The first output page is named `index.html`.
 - Subsequent pages are named according to their order (e.g., `2.html`, `3.html`, etc.).
