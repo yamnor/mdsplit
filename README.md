@@ -1,7 +1,8 @@
 # mdsplit: Markdown Splitter for mdBook
 
 ## Overview
-`mdsplit` is a preprocessor script for [mdBook](https://github.com/rust-lang/mdBook), designed to parse a single long Markdown file and split it into parts, sections, and subsections. It recognizes and organizes content based on header levels: `#` for parts, `##` for sections, `###` for subsections, and retains the original levels for headers level 4 and beyond.
+
+`mdsplit` is a preprocessor script for [mdBook](https://github.com/rust-lang/mdBook), designed to parse a single long Markdown file and split it into parts, sections, and subsections. It recognizes and organizes content based on header levels: `#` for parts, `##` for sections, `###` for subsections.
 
 - The first output page is named `index.html`.
 - Subsequent pages are named according to their order (e.g., `2.html`, `3.html`, etc.).
@@ -11,8 +12,6 @@
 - If a header contains a `|`, the text string on the right side of `|` is used as the path for that page.
 
 ## Usage
-
-To use `mdsplit` as a preprocessor in mdBook:
 
 ### 1. Prepare Your Markdown File:
 
@@ -38,8 +37,10 @@ command = "python mdsplit.py"
 Ensure `mdsplit.py` is in the same directory as your `book.toml`, or adjust the command to point to its location.
 
 ## Requirements
+
 - Python 3.x
 - mdBook environment
 
 ## License
+
 `mdsplit` is released under the ***Mozilla Public License v2.0***, for more information take a look at the [LICENSE](LICENSE) file.
