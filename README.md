@@ -28,4 +28,4 @@ To use `mdsplit` as a preprocessor in mdBook:
 - mdBook environment
 
 ## License
-`mdsplit` is released under the ***Mozilla Public License v2.0***, for more information take a look at the [LICENSE] file.
+`mdsplit` is released under the ***Mozilla Public License v2.0***, for more information take a look at the [LICENSE](LICENSE) file.
