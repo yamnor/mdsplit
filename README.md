@@ -14,26 +14,26 @@
 
 To use `mdsplit` as a preprocessor in mdBook:
 
-1. Prepare Your Markdown File:
+### 1. Prepare Your Markdown File:
 
-Place your long Markdown file (e.g., `book.md`) in the `src` directory of your mdBook project.
+Place your Markdown file (e.g., `book.md`) in the `src` directory of your mdBook project.
 
-2. Update the SUMMARY.md:
+### 2. Update the SUMMARY.md:
 
 In the `src` directory, create or update the `SUMMARY.md` file to include a link to your Markdown file.
 
-   ```markdown
-   [](.book.md)
-   ```
+```markdown
+[](./book.md)
+```
 
-3. Configure the Preprocessor:
+### 3. Configure the Preprocessor:
 
 Add the following lines to your `book.toml` file.
 
-   ```toml
-   [preprocessor.mdsplit]
-   command = "python mdsplit.py"
-   ```
+```toml
+[preprocessor.mdsplit]
+command = "python mdsplit.py"
+```
 
 Ensure `mdsplit.py` is in the same directory as your `book.toml`, or adjust the command to point to its location.
 
