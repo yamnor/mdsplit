@@ -1,4 +1,4 @@
-# mdsplit: Markdown Splitter for mdBook
+# ✂️ mdsplit: Markdown Splitter for mdBook
 
 ## Overview
 
